@@ -21,8 +21,11 @@
         {
             if (!is_dir('fotos/tumbs'))
             mkdir ('fotos/tumbs', 0777);
-            if (!is_file('fotos/tumbs/MINI-$foto'))
-            system ("convert -sample 40x40 /fotos/$foto /fotos/tumbs/MINI-$foto");
+            if (!is_file('fotos/tumbs/MINI-$foto')){
+                // system ("convert -sample 40x40 /fotos/$foto /fotos/tumbs/MINI-$foto");//Comvierte y copia, comando Linux
+                system ("convert -sample 40x40 /fotos/$foto /fotos/tumbs/MINI-$foto");//Copia de la carpeta fotos, comandos Windows
+            }
+
         }
         echo "<table border=1>";
         $puntero = opendir('fotos');

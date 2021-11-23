@@ -5,7 +5,7 @@
     </head>
     <body>
         <?php
-            if ($gestor = opendir('Picture'))
+            if ($gestor = opendir('../Picture'))
             {
                 echo "<table border=1>";
                 echo "<tr>";
@@ -22,7 +22,7 @@
                         }
                         $i++;
                         echo "<td>";
-                        echo "<a href=Picture/$archivo target='_blank'><img src=Picture/$archivo width='100' height='100' alt='$archivo'></a>";
+                        echo "<a href=../Picture/$archivo target='_blank'><img src=../Picture/$archivo width='100' height='100' alt='$archivo'></a>";
                         echo "</td>";
                     }
                 }

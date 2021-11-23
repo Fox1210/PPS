@@ -28,7 +28,7 @@
 
         }
         echo "<table border=1>";
-        $puntero = opendir('fotos');
+        $puntero = opendir('../Picture');
         $i=1;
         while (false !== ($foto = readdir($puntero)))
         {
@@ -37,8 +37,8 @@
                 crea_tumbs($foto);
                 if ($i==1)
                 echo "<tr>";
-                echo "<td><a href='fotos/tumbs/MINI-$foto'>";
-                echo "<img src='fotos/$foto' width=100 height=100></img>";
+                echo "<td><a href='../Picture/tumbs/MINI-$foto'>";
+                echo "<img src='../Picture/$foto' width=100 height=100></img>";
                 echo "</a></td>";
                 if ($i==4)
                 {echo "</tr>"; $i=0;}

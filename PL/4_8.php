@@ -16,7 +16,6 @@
                 if (preg_match("/[Gg][Ii][Ff]$/", $fotos))$rdo=1;
                 if (preg_match("/[Pp][Nn][Gg]$/", $fotos))$rdo=1;
                 if (preg_match("/[Bb][Mm][Pp]$/", $fotos))$rdo=1;
-                preg_match()
                 return $rdo;
             }
             echo "<table border=1>";

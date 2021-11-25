@@ -11,6 +11,8 @@
                 $v[$i]=$i*2;
             for ($i=0;$i<10;$i++)
                 echo "$v[$i]<br>";
+
+            echo"$v[20]"
         ?>
     </body>
 </html>

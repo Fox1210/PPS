@@ -11,19 +11,21 @@
         function valida_foto($fotos)
         {
             $rdo=0;
-            if (ereg("[Jj][Pp][Gg]$", $fotos)) $rdo=1;
-            if (ereg("[Gg][Ii][Ff]$", $fotos)) $rdo=1;
-            if (ereg("[Pp][Nn][Gg]$", $fotos)) $rdo=1;
-            if (ereg("[Bb][Mm][Pp]$", $fotos)) $rdo=1;
+            if (preg_match("/[Jj][Pp][Gg]$/", $fotos))$rdo=1;
+            if (preg_match("/[Jj][Pp][Ee][Gg]$/", $fotos))$rdo=1;
+            if (preg_match("/[Gg][Ii][Ff]$/", $fotos))$rdo=1;
+            if (preg_match("/[Pp][Nn][Gg]$/", $fotos))$rdo=1;
+            if (preg_match("/[Bb][Mm][Pp]$/", $fotos))$rdo=1;
+            if (preg_match("/[Jj][Ff][Ii][Ff]$/", $fotos))$rdo=1;
             return $rdo;
         }
         function crea_tumbs($foto)
         {
-            if (!is_dir('fotos/tumbs'))
-            mkdir ('fotos/tumbs', 0777);
-            if (!is_file('fotos/tumbs/MINI-$foto')){
+            if (!is_dir('../Picture/tumbs'))
+                mkdir ('../Picture/tumbs', 0777);// crea una carpeta
+            if (!is_file("../Picture/tumbs/MINI-$foto")){
                 // system ("convert -sample 40x40 /fotos/$foto /fotos/tumbs/MINI-$foto");//Comvierte y copia, comando Linux
-                system ("convert -sample 40x40 /fotos/$foto /fotos/tumbs/MINI-$foto");//Copia de la carpeta fotos, comandos Windows
+                copy("../Picture/$foto","../Picture/tumbs/MINI-$foto");//Copia de la carpeta fotos, comandos Windows
             }
 
         }

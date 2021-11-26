@@ -25,8 +25,8 @@
 
             /*listado de dias: para cada mes cuales son sus dias, ejemplo: enero:31,
             febrero:28... $listado_dias["enero"]=31 ---> echo "El mes de mes tiene x dias" **Array bidimensional*/
-            echo "<br>-------------------------------Meses de un año-------------------------------<br>";
-            
+            echo "<br>-------------------------------Dias de cada mes en un año-------------------------------<br>";
+            $diasMesAño=[31,28,31,30,31,30,31,31,30,31,30,31];
 
         ?>
     </body>

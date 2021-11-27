@@ -15,7 +15,7 @@
             // {
             // echo “El elemento de indice $indice vale $valor <br>”;
             // }
-            //
+            
             echo "<br>-------------------------------Meses de un año-------------------------------<br>";
             $vector=["enero","febrero","marzo","abril","mayo",
                     "junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];

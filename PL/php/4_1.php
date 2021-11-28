@@ -13,9 +13,9 @@
     $fin = " a todos ";
     // $fin= $fin."alumnos de ciber";//Concadenado dos cadenas
     //Añadimos una nueva variable
-    $alumnos=" alumnos de ciber";
-    $nombre=", yo soy Pablo Gómez Meléndez";
-    $todo = $ini.$fin.$alumnos.$nombre;
+    $alumnos = " alumnos de ciber";
+    $nombre = ", yo soy Pablo Gómez Meléndez";
+    $todo = $ini . $fin . $alumnos . $nombre;
     echo $todo;
     ?>
 </body>

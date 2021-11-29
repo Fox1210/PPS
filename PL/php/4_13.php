@@ -41,6 +41,15 @@
             }
         }
     }
+    foreach ($vector1 as $key => $value) {
+        foreach ($value as $key => $value1) {
+            foreach ($value1 as $key => $value2) {
+                echo "$value2<br>";
+            }
+            echo "################################################<br>";
+        }
+        echo"************************************************************<br>";
+    }
     ?>
 </body>
 </html>

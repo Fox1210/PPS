@@ -31,8 +31,16 @@
             febrero:28... $listado_dias["enero"]=31 ---> echo "El mes de mes tiene x dias" **Array bidimensional*/
     echo "<br>-------------------------------Dias de cada mes en un año-------------------------------<br>";
     $diasMesAño = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-
+    //VECTOR 3D
+    $vector1;
+    define('SIZE', 12);
+    for ($i=0; $i < SIZE; $i++) {//año
+        for ($j=0; $j < SIZE; $j++) {//mes
+            for ($k=0; $k < SIZE; $k++) {//dia
+                $vector1[$i][$j][$k]=$diasMesAño[$j];
+            }
+        }
+    }
     ?>
 </body>
-
 </html>

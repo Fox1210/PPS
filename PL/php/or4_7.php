@@ -19,8 +19,7 @@
                 }
                 $i++;
                 echo "<td>";
-                echo "<a href=fotos/$archivo><img src=fotos/$archivo>
-</a>";
+                echo "<a href=fotos/$archivo><img src=fotos/$archivo></a>";
                 echo "</td>";
             }
         }

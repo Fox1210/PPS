@@ -26,7 +26,7 @@
         if (!is_dir('../Picture/tumbs'))
             mkdir('../Picture/tumbs', 0777); // crea una carpeta
         if (!is_file("../Picture/tumbs/MINI-$foto")) {
-            // system ("convert -sample 40x40 /fotos/$foto /fotos/tumbs/MINI-$foto");//Comvierte y copia, comando Linux
+            // system ("convert -sample 40x40 /fotos/$foto /fotos/tumbs/MINI-$foto");//Comvierte y copia, desde el sistema con comando Linux
             copy("../Picture/$foto", "../Picture/tumbs/MINI-$foto"); //Copia de la carpeta fotos, comandos Windows
         }
     }
@@ -52,5 +52,4 @@
     echo "</table>";
     ?>
 </body>
-
 </html>

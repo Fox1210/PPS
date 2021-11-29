@@ -14,7 +14,7 @@
     for ($i = 0; $i < 10; $i++)
         echo "$v[$i]<br>";
 
-    echo "$v[20]"
+    echo "$v[20]";//un error forzado para crear ver un desvordamiento
     ?>
 </body>
 

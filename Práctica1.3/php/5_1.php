@@ -8,10 +8,21 @@
 
 <body>
     <?php
-    import_request_variables("pg", "f_");
+    // import_request_variables("pg", "f_");//Funcion deprecated
+    // extract($_GET,EXTR_PREFIX_ALL,"f");
+    extract($_POST, EXTR_PREFIX_ALL,'f');
+
     echo "Son ";
     echo $f_euros * 166.386;
-    echo " pesetas";
+    echo " pesetas<br>";
+
+    echo "Son ";
+    echo $f_dolar * 0.88;
+    echo " euros<br>";
+
+    echo "Son ";
+    echo $f_libra * 1.17;
+    echo " euros<br>";
     ?>
 </body>
 

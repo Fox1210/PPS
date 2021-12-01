@@ -41,7 +41,7 @@ function is_valid_NIF($value)
     }
 }
 /** Valid document */
-function is_valid_doc($document)
+function is_valid_document($document)
 {
     if (preg_match("/[Dd][Oo][Cc][Xx]$/", $document)) return true;
     if (preg_match("/[Oo][Dd][Tt]$/", $document)) return true;

@@ -3,6 +3,7 @@ include_once "librerias/calculo.php";
 include_once "librerias/validaciones.php";
 define("NUMBER1",2);
 define("NUMBER2",2);
+define("NUMBER3",25);
 echo "<h1>Prueba voluntaria</h1><br>";
 
 echo "Prueba validación foto <br>";
@@ -26,9 +27,12 @@ if(is_valid_NIF("78498746Q")){echo"Valido"."<br>";}else{echo"No valido"."<br>";}
 echo "<br>";
 
 echo "Prueba validación documetos <br>";
-if(is_valid_picture("documento.txt")){echo"Valido"."<br>";}else{echo"No valido"."<br>";}//Bien
-if(is_valid_picture("java.class")){echo"Valido"."<br>";}else{echo"No valido"."<br>";}//Mal
+if(is_valid_document("documento.txt")){echo"Valido"."<br>";}else{echo"No valido"."<br>";}//Bien
+if(is_valid_document("java.class")){echo"Valido"."<br>";}else{echo"No valido"."<br>";}//Mal
+
 echo "<br>";
-echo "Número A = ".NUMBER1." y Número B= ".NUMBER2;
+echo "Número A = ".NUMBER1." , Número B= ".NUMBER2." y Número C=".NUMBER3."<br>";
 echo "Suma= ".sum(NUMBER1,NUMBER2)."&nbsp Resta= ".rest(NUMBER1,NUMBER2)
-    ."&nbsp Multipliación= ".mul(NUMBER1,NUMBER2)."&nbsp División= ".div(NUMBER1,NUMBER2);
+    ."&nbsp Multipliación= ".mul(NUMBER1,NUMBER2)."&nbsp División= ".div(NUMBER1,NUMBER2)
+    ."&nbsp Modulo= ".mod(NUMBER1,NUMBER2)."&nbsp Potencia= ".pot(NUMBER1,NUMBER2)
+    ."&nbsp Raiz= ".raiz(NUMBER3);

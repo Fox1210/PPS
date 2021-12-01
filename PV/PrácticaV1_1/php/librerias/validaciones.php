@@ -33,10 +33,20 @@ function is_valid_NIF($value)
     if(!preg_match("/^[0-9]{8}[TRWAGMYFPDXBNJZSQVHLCKET]$/i",$nif))return false;
     $letra = substr($nif, -1);
     $numeros = substr($nif, 0, -1);
-    if (substr("TRWAGMYFPDXBNJZSQVHLCKE", $numeros % 23, 1) == $letra 
+    if (substr("TRWAGMYFPDXBNJZSQVHLCKE", $numeros % 23, 1) == $letra
     && strlen($letra) == 1 && strlen($numeros) == 8) {
-       return true;
+        return true;
     } else {
         return false;
     }
+}
+/** Valid document */
+function is_valid_doc($document)
+{
+    if (preg_match("/[Dd][Oo][Cc][Xx]$/", $document)) return true;
+    if (preg_match("/[Oo][Dd][Tt]$/", $document)) return true;
+    if (preg_match("/[Rr][Tt][Ff]$/", $document)) return true;
+    if (preg_match("/[Pp][Dd][Ff]$/", $document)) return true;
+    if (preg_match("/[Tt][Xx][Tt]$/", $document)) return true;
+    return false;
 }

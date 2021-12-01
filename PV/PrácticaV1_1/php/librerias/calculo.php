@@ -19,11 +19,11 @@
     {
         return $number1%$number2;
     }
-    function pow($base, $exponent)
+    function pot($base, $exponent)
     {
         return pow($base,$exponent);
     }
-    function squ($number)
+    function raiz($number)
     {
         return sqrt ($number);
     }

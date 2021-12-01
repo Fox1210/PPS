@@ -29,17 +29,14 @@ function is_valid_email($email)
 /** Valid NIF */
 function is_valid_NIF($value)
 {
-    define("NIFREXP", "/^[0-9]{8}[TRWAGMYFPDXBNJZSQVHLCKET]$/i");
-    $validChars = 'TRWAGMYFPDXBNJZSQVHLCKET';
-    $nif = (string) $value;
-    echo $nif."<br>";
-    $nif = strtoupper($nif);
-    echo $nif."<br>";
-    echo preg_match(NIFREXP, $nif);
-    if (!preg_match(NIFREXP, $nif))return false;
-
-    $letter = $nif . substr(-1);
-    $charIndex = parseInt(nie . substr(0, 8)) % 23;
-
-    if ($validChars . charAt($charIndex) === letter) return true;
+    $nif = strtoupper($value);
+    if(!preg_match("/^[0-9]{8}[TRWAGMYFPDXBNJZSQVHLCKET]$/i",$nif))return false;
+    $letra = substr($nif, -1);
+    $numeros = substr($nif, 0, -1);
+    if (substr("TRWAGMYFPDXBNJZSQVHLCKE", $numeros % 23, 1) == $letra 
+    && strlen($letra) == 1 && strlen($numeros) == 8) {
+       return true;
+    } else {
+        return false;
+    }
 }

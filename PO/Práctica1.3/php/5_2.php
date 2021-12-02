@@ -9,14 +9,14 @@
 <body>
     <?php
     // import_request_variables("pg", "f_");//Funcion deprecated
-    extract($_POST, EXTR_PREFIX_ALL,'f');
+    extract($_POST, EXTR_PREFIX_ALL, 'f');
     echo "Son ";
     if ($f_conv == 1) {
         echo $f_cantidad / 166.386;
         echo " euros";
     } else {
         echo $f_cantidad / 180.386;
-        echo " dolares";
+        echo ' dolares';
     }
     ?>
 </body>

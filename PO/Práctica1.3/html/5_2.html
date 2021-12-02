@@ -7,13 +7,15 @@
 </head>
 
 <body>
-    <form method=post action=../php/5_2.php>
-        Introduzca la cantidad: <input type=text name=cantidad size=10>
+    <form method=post action=../php/5_2.php?dni=1347584&passwor=xcgvhbjnk> <!-- envia informaicon por $get -->
+        Introduzca la cantidad: <input type=text name=cantidad size=10 value="3000">
         <input type=submit name=ok value=enviar>
+        <input type=reset name=reset value=restear>
         <br>
         Seleccione el tipo de conversion:<br>
         <input type=radio name=conv value=1 checked>Euros<br>
         <input type=radio name=conv value=2>dolares<br>
+        <!-- añadir nuevos elementos de form  -->
     </form>
 </body>
 

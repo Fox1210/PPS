@@ -18,6 +18,14 @@
         echo $f_cantidad / 180.386;
         echo ' dolares';
     }
+    echo $f_password;
+    echo $f_checkbox;
+    echo $f_hidden;
+    echo $f_textarea;
+    echo $f_select;
+
+    echo "*************************";
+
     ?>
 </body>
 

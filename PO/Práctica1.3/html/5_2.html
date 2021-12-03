@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <form method=post action=../php/5_2.php?dni=1347584&passwor=xcgvhbjnk> <!-- envia informaicon por $get -->
+    <form method=post action=../php/5_2.php?dni=123456789&passwor=123456789> <!--* envia informaicon por $get -->
         Introduzca la cantidad: <input type=text name=cantidad size=10 value="3000">
         <input type=submit name=ok value=enviar>
         <input type=reset name=reset value=restear>
@@ -15,7 +15,17 @@
         Seleccione el tipo de conversion:<br>
         <input type=radio name=conv value=1 checked>Euros<br>
         <input type=radio name=conv value=2>dolares<br>
-        <!-- añadir nuevos elementos de form  -->
+        <br>
+
+        <!-- * añadir nuevos elementos de form  -->
+        <input type=password name=password><br>
+        <input type=checkbox name=checkbox><br>
+        <input type=hidden name=conv value=prueba><br>
+        <textarea  name="textarea"cols="12" rows="6" placeholder="Texto de prueba"></textarea>
+        <select name="select">
+            <option value="1">Sevilla</option>
+            <option value="2">Cádiz</option>
+        </select>
     </form>
 </body>
 

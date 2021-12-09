@@ -18,7 +18,7 @@
             echo $f_cantidad / 180.386 . " dolares<BR>";
     }
     ?>
-    <form method=post action=ej5.4.php>
+    <form method=post action=ej5_4.php>
         Introduzca la cantidad: <input type=text name=cantidad size=10>
         <input type=submit name=ok value=enviar>
         <br>

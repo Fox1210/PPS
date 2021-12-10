@@ -4,14 +4,21 @@
 <body>
     <?php
     if (is_uploaded_file($_FILES['foto']['tmp_name'])) {
+        echo"El archivo ".$_FILES['foto']['name']." se subio de forma corecta <br>";
+        echo"<pre>";
+            print_r($_FILES['foto']);
+        echo"</pre>";
+
         // $nombre = date(DATE_RFC822);//! Da problemas por que añade espacios
         $nombre="aaa".rand();
         print($nombre);
-        // copy($_FILES['foto']['tmp_name'], "fotos/$nombre.jpg");//! Da problemas dla barra en windows, no en linux
+        // copy($_FILES['foto']['tmp_name'], "fotos/$nombre.jpg");//! Da problemas con la barra en windows, no en linux
         copy($_FILES['foto']['tmp_name'], "..\\picture\\$nombre.jpg");
-    } else
+        echo "";
+    } else{
         echo "Possible file upload attack. Filename: " .
             $_FILES['foto']['name'] . "---" . $_FILES['foto']['tmp_name'];
+        }
     ?>
 </body>
 

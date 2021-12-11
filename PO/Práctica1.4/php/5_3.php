@@ -10,7 +10,7 @@
         echo"</pre>";
 
         // $nombre = date(DATE_RFC822);//! Da problemas por que añade espacios
-        $nombre="aaa".rand();
+        $nombre="PGM".rand();//* Personalizacion de los archivos
         print($nombre);
         // copy($_FILES['foto']['tmp_name'], "fotos/$nombre.jpg");//! Da problemas con la barra en windows, no en linux
         copy($_FILES['foto']['tmp_name'], "..\\picture\\$nombre.jpg");

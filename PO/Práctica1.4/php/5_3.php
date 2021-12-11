@@ -6,7 +6,7 @@
     if (is_uploaded_file($_FILES['foto']['tmp_name'])) {
         echo"El archivo ".$_FILES['foto']['name']." se subio de forma corecta <br>";
         echo"<pre>";
-            print_r($_FILES['foto']);
+            print_r($_FILES['foto']);//? Muestar informacion de los archivos subidos
         echo"</pre>";
 
         // $nombre = date(DATE_RFC822);//! Da problemas por que añade espacios

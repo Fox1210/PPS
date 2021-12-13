@@ -9,8 +9,8 @@
         //     print_r($_FILES['foto']);//? Muestar informacion de los archivos subidos
         // echo"</pre>";
         extract($_POST, EXTR_PREFIX_ALL, 'f');
-        $sizeMax=$f_size;
-        $sizePicture=$_FILES['foto']['size'];
+        $sizeMax=(Int)$f_size;
+        $sizePicture=(Int)$_FILES['foto']['size'];
         // $nombre = date(DATE_RFC822);//! Da problemas por que añade espacios
         $nombre="PGM".rand();//* Personalizacion de los archivos
         print($nombre);

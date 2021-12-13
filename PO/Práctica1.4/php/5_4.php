@@ -5,7 +5,7 @@
     <meta content="text/html; charset=ISO-8859-1" httpequiv="content-type">
     <title>Ejercicio 5.4</title>
 </head>
-<!-- //TODO Hecer que sea excluyente, es decir que el formulario solo se muestre una vez -->
+<!-- ///// //TODO Hecer que sea excluyente, es decir que el formulario solo se muestre una vez -->
 <body>
     <?php
     // import_request_variables("pg", "f_"); //!Funcion obsoleta

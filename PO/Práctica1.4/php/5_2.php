@@ -9,10 +9,6 @@
 
 <body>
     <?php
-    function saltoLinea()
-    {
-        echo "<br>";
-    }
     // import_request_variables("pg", "f_");//Funcion deprecated
     extract($_POST, EXTR_PREFIX_ALL, 'f');
     echo "Son ";
@@ -24,16 +20,15 @@
         echo ' dolares <br>';
     }
     echo $f_password;
-    saltaLinea();
+    echo "<br>";
     echo $f_checkbox;
-    saltaLinea();
+    echo "<br>";
     echo $f_hidden;
-    saltaLinea();
+    echo "<br>";
     echo $f_textarea;
-    saltaLinea();
+    echo "<br>";
     echo $f_select;
 
-    echo "*************************";
 
     ?>
 </body>

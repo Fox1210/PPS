@@ -19,7 +19,7 @@
         copy($_FILES['foto']['tmp_name'], "..\\picture\\$nombre.jpg");
         echo "";
 
-        ///// //TODO Si el tamano es mayor al indicado en el hiden se elimina
+        ///// //TODO Si el tamaño es mayor al indicado en el hiden se elimina
         if ($sizeMax<$sizePicture) {
             unlink("..\\picture\\$nombre.jpg");
         }

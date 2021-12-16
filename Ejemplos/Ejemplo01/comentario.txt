@@ -1,1 +1,8 @@
-<script>alert("hakeado BOBO");</script>
+<script> alert("hakeado BOBO"); </script>
+
+<script> window.location="https://www.marca.com/"; </script>
+
+<script>
+    function redireccionar() {location.href="https://didesweb.com/"}
+	setTimeout ("redireccionar()", 500);
+</script>

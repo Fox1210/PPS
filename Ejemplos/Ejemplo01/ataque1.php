@@ -16,7 +16,7 @@ else{
 	//echo "<p>comentario sin espacios: ".$comentario;
 }
 
-
+echo file_get_contents('comentarios.txt');
 
 
 

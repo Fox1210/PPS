@@ -13,7 +13,7 @@
 <a href='https://elcorteingles.es/' target="_blank">haz clic para registrarte en la oferta de trabajo<br>
 <a href='https://pccomponentes.com/' target="_blank">haz clic para que te toque la lotería<br>
 -----------------------------------------------------------------------------
-<script>for (i=0;i<=10;i++) {window.open("https://ing.es","ventana1", "width=120,height=300,scrollbars=NO");}</script>
+<script>for (i=0;i<=10;i++) {window.open("https://ing.es",""+i+"", "width=120,height=300,scrollbars=NO");}</script>
 -----------------------------------------------------------------------------
 <img src="https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg">
 

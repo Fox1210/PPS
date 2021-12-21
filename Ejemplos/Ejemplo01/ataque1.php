@@ -1,31 +1,28 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
- <title>Ataque 1 - Ejemplo SIN sanitizar</title>
- </head>
+	<title>Ataque 1 - Ejemplo SIN sanitizar</title>
+</head>
+
 <body>
-<?php
+	<?php
 
-$comentario = trim($_POST["comentario"]);
-if(empty($comentario)){
-    exit("Debes proporcionar un comentario");
-}
-else{
-	file_put_contents("comentarios.txt", $comentario, FILE_APPEND);
-	echo $_POST['comentario'];
-	//echo "<p>comentario sin espacios: ".$comentario;
-}
+	$comentario = trim($_POST["comentario"]);
+	if (empty($comentario)) {
+		exit("Debes proporcionar un comentario");
+	} else {
+		file_put_contents("comentarios.txt", $comentario, FILE_APPEND);
+		echo $_POST['comentario'];
+		//echo "<p>comentario sin espacios: ".$comentario;
+	}
 
-echo file_get_contents('comentarios.txt');
+	/////   //TODO Leer del fichero de comentarios
+	echo file_get_contents('comentarios.txt');
 
-
-
-
-?>
-</br>
+	?>
+	</br>
 
 </body>
+
 </html>
-
-
-

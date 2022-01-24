@@ -43,6 +43,6 @@ for (i = 0; i <= 10; i++) {
     num1 = Math.random() * (tam[0] - 1) + 1;
     num2 = Math.random() * (tam[1] - 1) + 1;
 
-    window.open("https://ing.es", i, "width=" + num1 + ",height=" + num2 + ",scrollbars=NO, top=" + num1 + ", left=" + num2);
+    window.open("https://prezi.com", i, "width=" + num1 + ",height=" + num2 + ",scrollbars=NO, top=" + num1 + ", left=" + num2);
 }
 </script>
